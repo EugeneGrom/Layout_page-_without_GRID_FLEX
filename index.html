@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новостное агентство</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="popup-container">
+        <div id="popup">TEXT</div>
+    </div>
+    <div class="blue-bar">
+        <div class="fixed-container" id='zero'>
+            <div id="link">Самые <a href="#">свежие новости</a> в реальном времени</div>
+            <div id="datetime">12:30 19.06.2019</div>
+            <div id="currencyUSD">USD/UAH: <span id="USD"></span> </div>
+            <div id="currencyEUR">EUR/UAH: <span id="EUR"></span> </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="fixed-container">
+            <img id="logo" src="img/logo.png" alt="logo" usemap="logo">
+            <label id="dateText">19 июня, вторник</label>
+            <div class="inline1">
+                <img src="img/icon-time.png">
+                <label>10:48</label>
+            </div>
+            <div class="inline2">
+                <img src="img/icon-weather.png">
+                <label>22<sup>о</sup>C</label>
+            </div>
+            <form>
+                <input type="text" id="input" placeholder="Поиск по сайту">
+            </form>
+        </div>
+    </div>
+    <div class="fixed-container">
+        <div class="menu-container">
+            <div class="inline-sector"><a href="index.html">Главная</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>Политика</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>Общество</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>Экономика</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>В мире</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>Происшествия</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>Спорт</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>Наука</a></div>
+            <div class="slash">/</div>
+            <div class="inline-sector"><a href='#'>Туризм</a></div>
+        </div>
+    </div>
+    <div id="central-container">
+        <div class="fixed-container">
+            <div id="column-left">
+                <h2>Новости дня</h2>
+                <div class="news-item">
+                    <div class="news-item-text">Кот Ахилл предсказал победу Украины на ЧМ-2024</div>
+                    <div class="news-item-props">
+                        <a href="#">/ЧМ по футболу</a>
+                        <div class="news-time">
+                            10:45
+                        </div>
+                        <div class="news-comments-count">10</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Кот Ахилл предсказал победу Украины на ЧМ-2024</div>
+                    <div class="news-item-props">
+                        <a href="#">/ЧМ по футболу</a>
+                        <div class="news-time">
+                            10:45
+                        </div>
+                        <div class="news-comments-count">20</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Кот Ахилл предсказал победу Украины на ЧМ-2024</div>
+                    <div class="news-item-props">
+                        <a href="#">/ЧМ по футболу</a>
+                        <div class="news-time">
+                            10:45
+                        </div>
+                        <div class="news-comments-count">60</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Кот Ахилл предсказал победу Украины на ЧМ-2024</div>
+                    <div class="news-item-props">
+                        <a href="#">/ЧМ по футболу</a>
+                        <div class="news-time">
+                            10:45
+                        </div>
+                        <div class="news-comments-count">30</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Кот Ахилл предсказал победу Украины на ЧМ-2024</div>
+                    <div class="news-item-props">
+                        <a href="#">/ЧМ по футболу</a>
+                        <div class="news-time">
+                            10:45
+                        </div>
+                        <div class="news-comments-count">40</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Кот Ахилл предсказал победу Украины на ЧМ-2024</div>
+                    <div class="news-item-props">
+                        <a href="#">/ЧМ по футболу</a>
+                        <div class="news-time">
+                            10:45
+                        </div>
+                        <div class="news-comments-count">50</div>
+                    </div>
+                </div>
+                <button id="button-all-news"><a href>Все новости</a></button>
+                <button id="changeButton">Open POP-UP Window</button>
+            </div>
+            <div id="column-center">
+                <img id="img-background" src="img/back-center.jpg">
+                <div class="posts">
+                    <div class="news-center-left">
+                        <img src="img/post-1.bmp">
+                        <div class="news-center-text">В Украине работают сервисы Youtube и Twitch, все работает</div>
+                        <div class="news-center-props">
+                            <a href="#">/Интернет</a>
+                            <div class="news-center-time">
+                                11:17
+                            </div>
+                            <div class="news-center-comments-count">
+                                10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-center-right">
+                        <img src="img/post-2.bmp">
+                        <div class="news-center-text">Кейн признан лучшим игроком матча ЧМ-2018 Тунис-Англия</div>
+                        <div class="news-center-props">
+                            <a href="#">/Спорт</a>
+                            <div class="news-center-time">
+                                11:39
+                            </div>
+                            <div class="news-center-comments-count">
+                                30
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-center-left">
+                        <img src="img/f1.bmp">
+                        <div class="news-center-text">Слухи в Формула-1: Норрис задумался о переходе в Alpine</div>
+                        <div class="news-center-props">
+                            <a href="#">/Спорт</a>
+                            <div class="news-center-time">
+                                11:17
+                            </div>
+                            <div class="news-center-comments-count">
+                                10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-center-right">
+                        <img src="img/kherson.bmp">
+                        <div class="news-center-text">"Людей просто бросили умирать": местные жители рассказали, что происходит под Херсоном после подрыва Каховской ГЭС</div>
+                        <div class="news-center-props">
+                            <a href="#">/Украина</a>
+                            <div class="news-center-time">
+                                11:39
+                            </div>
+                            <div class="news-center-comments-count">
+                                30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="column-right">
+                <img src="img/banner-1.png">
+                <img src="img/banner-2.png">
+            </div>
+        </div>
+        <div class="fixed-container" id="indent">
+            <div class="special-news">
+                <img src="img/back-bottom.bmp">
+                <div id="bottom-text">
+                    <h2 id="h2">Самые читаемые новости</h2>
+                        <div class="news-bottom-item">
+                            <h3>Кулеба поговорил с новым главой МИД Турции - тот пообещал гуманитарную помощь</h3>
+                            <div class="news-item-props">
+                                <a href="#">/Политика</a>
+                                <div class="news-bottom-time">
+                                    12:20
+                                </div>
+                                <div class="news-bottom-comments-count">13</div>
+                            </div>
+                        </div>
+                        <div class="news-bottom-item">
+                            <h3>В Германии допустили предоставление аэродромов для обучения украинских пилотов на F-16</h3>
+                            <div class="news-item-props">
+                                <a href="#">/Политика</a>
+                                <div class="news-bottom-time">
+                                    09:44
+                                </div>
+                                <div class="news-bottom-comments-count">4763</div>
+                            </div>
+                        </div>
+                        <div class="news-bottom-item" id="last-bottom-item">
+                            <h3>Где в Харькове собирают помощь жителям Херсонщины</h3>
+                            <div class="news-item-props">
+                                <a href="#">/Политика</a>
+                                <div class="news-bottom-time">
+                                    15:33
+                                </div>
+                                <div class="news-bottom-comments-count">13</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-first">
+                    <div class="fixed-container">
+                        <div class="footer-1-item">
+                            <div class="back-to-main"><a href='index.html'>Главная</a></div>
+                            <div class="back-to-main"><a href='#'>Политика</a></div>
+                            <div class="back-to-main"><a href='#'>Общество</a></div>
+                            <div class="back-to-main"><a href='#'>Экономика</a></div>
+                            <div class="back-to-main"><a href='#'>В мире</a></div>
+                        </div>
+                        <div class="footer-2-item">
+                            <div class="back-to-main"><a href='#'>Путешествия</a></div>
+                            <div class="back-to-main"><a href='#'>Спорт</a></div>
+                            <div class="back-to-main"><a href='#'>Наука</a></div>
+                            <div class="back-to-main"><a href='#'>Туризм</a></div>
+                        </div>
+                        <div class="footer-3-item">
+                            <img src="img/logo_2.bmp">
+                            <div class="back-to-main"><a href='#'>Об агентстве</a></div>
+                            <div class="back-to-main"><a href='#'>Контакты</a></div>
+                            <div class="back-to-main"><a href='#'>Опубликовать новость</a></div>
+                        </div>
+                        <div class="footer-4-item">
+                            <div class="social-icons">
+                                <img src="img/logo_facebook.bmp">
+                                <img src="img/logo_twitter.bmp">
+                                <img src="img/logo_instagram.bmp">
+                            </div>
+                            <div class="footer-props">
+                                <div class="footer-tel">
+                                    +38(095)047-43-32
+                                </div>
+                            </div>
+                            <div class="footer-props">
+                                <div class="footer-mail">
+                                    sixfingers91@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-second">
+                    <span>
+                    Новостное агентство, 2022-2023 Все права защищены</span>
+                </div>      
+            </footer>
+</body>
+
+</html>
